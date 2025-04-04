@@ -1,0 +1,150 @@
+/* 기본 스타일 */
+body {
+  font-family: "Pretendard", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  color: #212529;
+}
+
+/* 컨테이너 */
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* 제목 */
+h1 {
+  font-size: 2rem;
+  color: #1c7ed6;
+  margin-bottom: 20px;
+}
+
+/* 게시글 스타일 */
+.post {
+  background: #ffffff;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  transition: all 0.2s ease-in-out;
+}
+
+.post:hover {
+  background: #f1f3f5;
+  cursor: pointer;
+}
+
+.post h2 {
+  font-size: 1.3rem;
+  color: #343a40;
+  margin: 0;
+}
+
+.post h2:hover {
+  color: #1c7ed6;
+}
+
+/* 페이지네이션 */
+.pagination {
+  display: flex;
+  justify-content: center; /* 가운데 정렬 */
+  align-items: center;
+  margin-top: 20px;
+  gap: 6px; /* 버튼 간 간격 */
+  padding: 0;
+}
+
+.pagination-item {
+  list-style: none; /* 기본 목록 스타일 제거 */
+  display: inline-block; /* 가로 정렬 */
+}
+
+.pagination-item button {
+  background-color: white;
+  color: #1c7ed6;
+  border: 1px solid #1c7ed6;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pagination-item button:hover {
+  background-color: #1c7ed6;
+  color: white;
+}
+
+/* 모달창 */
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+  font-size: 1.6rem;
+  color: #212529;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  font-size: 1rem;
+  color: #495057;
+}
+
+.modal-content button {
+  background: #1c7ed6;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.modal-content button:hover {
+  background: #1864ab;
+}
+
+/* 검색창 */
+.search-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.search-container input {
+  width: 90%;
+  padding: 5px;
+  margin-left: 5px;
+  font-size: 15px;
+}
+.search-container select {
+  width: 10%;
+  padding: 5px;
+  font-size: 15px;
+  text-align: center; /* select 내부 텍스트 중앙 정렬 */
+}
