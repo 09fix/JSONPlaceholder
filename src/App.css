@@ -81,6 +81,13 @@ h1 {
   color: white;
 }
 
+.pagination-item button.active {
+  background-color: #1c7ed6; /* 선택된 페이지는 파란색 */
+  color: white;
+  font-weight: bold;
+  border: 1px solid #1864ab;
+}
+
 /* 모달창 */
 .modal-background {
   position: fixed;

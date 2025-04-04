@@ -106,10 +106,15 @@ function App() {
             ))}
 
             <div>
-              <ul>
+              <ul className="pagination">
                 {pageNumbers.map((number) => (
                   <li key={number} className="pagination-item">
-                    <button onClick={() => paginate(number)}>{number}</button>
+                    <button
+                      onClick={() => paginate(number)}
+                      className={currentPage === number ? "active" : ""}
+                    >
+                      {number}
+                    </button>
                   </li>
                 ))}
               </ul>
